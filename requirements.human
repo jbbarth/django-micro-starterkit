@@ -1,0 +1,15 @@
+# This file is the one you should edit to change the dependencies
+# Then you should *generate* the requirements.txt file with:
+#   pip-compile requirements.human
+django-micro
+
+# production server
+gunicorn
+
+# tests!
+pytest
+sure
+
+# db
+alembic
+psycopg2
