@@ -11,5 +11,4 @@ pytest
 sure
 
 # db
-alembic
 psycopg2
