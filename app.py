@@ -14,6 +14,7 @@ INSTALLED_APPS = [
     'django_extensions',
 ]
 TEMPLATE_DIRS = ['templates']
+CONTEXT_PROCESSORS = ['django.template.context_processors.request']
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 STATIC_URL = '/static/'
 ALLOWED_HOSTS = ['*']
