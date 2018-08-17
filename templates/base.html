@@ -1,13 +1,37 @@
 <!doctype html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <link rel=stylesheet href=/static/app.css>
     {% block head %}{% endblock %}
   </head>
   <body>
-
-    {% block content %}
-    {% endblock %}
-
+    <div class="container">
+	    <div class="header pt-1 bg-grey-lightest border-b border-grey-light mb-1">
+		    <div class="px-4 py-2 text-xl font-semibold">
+			    <span class="text-orange-darker">FOOBAR</span>.example.com
+		    </div>
+		    <nav class="px-4 py-3 py-2">
+			    <ul class="list-reset flex font-semibold">
+				    <li class="mr-6">
+					    <a class="border-b-2 {{ "border-orange-darker" if request.path == "/" else "border-transparent hover:border-grey-light" }} href="/">Home</a>
+				    </li>
+				    <li class="mr-6">
+					    <a class="border-b-2 {{ "border-orange-darker" if request.path == "/settings" else "border-transparent hover:border-grey-light" }}" href="/settings">Settings</a>
+				    </li>
+				    <li class="mr-6">
+					    <a class="border-b-2 {{ "border-orange-darker" if request.path == "/about" else "border-transparent hover:border-grey-light" }}" href="/about">About</a>
+				    </li>
+			    </ul>
+		    </nav>
+	    </div>
+	    <div class="flex">
+		    <div class="w-full h-12 py-2 px-4">
+          {% block content %}
+          {% endblock %}
+		    </div>
+	    </div>
+    </div>
   </body>
 </html>
