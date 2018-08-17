@@ -29,3 +29,10 @@ You may want to In a virtualenv of your choice:
 pip install pip-tools
 ./script/pip-sync
 ```
+
+
+Develop
+-------
+
+    python app.py runserver_plus
+

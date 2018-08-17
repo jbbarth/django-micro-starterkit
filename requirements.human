@@ -12,3 +12,11 @@ sure
 
 # db
 psycopg2
+
+# testing
+flake8
+
+# dev goodies
+ipython
+django-extensions
+werkzeug

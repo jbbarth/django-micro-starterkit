@@ -9,7 +9,10 @@ from django.views import static
 
 
 DEBUG = bool(os.getenv("DEBUG"))
-INSTALLED_APPS = ['django.contrib.staticfiles']
+INSTALLED_APPS = [
+    'django.contrib.staticfiles',
+    'django_extensions',
+]
 TEMPLATE_DIRS = ['templates']
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 STATIC_URL = '/static/'
