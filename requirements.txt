@@ -11,12 +11,15 @@ decorator==4.3.0          # via ipython, traitlets
 django-extensions==2.1.0
 django-micro==1.4.1
 django==1.10.7            # via django-micro
+djangomako==1.1.1
 enum34==1.1.6             # via flake8, traitlets
 flake8==3.5.0
 funcsigs==1.0.2           # via mock
 gunicorn==19.7.1
 ipython-genutils==0.2.0   # via traitlets
 ipython==5.8.0
+mako==1.0.7               # via djangomako
+markupsafe==1.0           # via mako
 mccabe==0.6.1             # via flake8
 mock==2.0.0               # via sure
 pathlib2==2.3.2           # via ipython, pickleshare

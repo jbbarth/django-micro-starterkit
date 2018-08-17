@@ -3,6 +3,9 @@
 #   pip-compile requirements.human
 django-micro
 
+# nice templating
+djangomako
+
 # production server
 gunicorn
 
