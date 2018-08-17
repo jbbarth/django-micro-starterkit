@@ -3,7 +3,6 @@ import os
 import django_micro as micro
 from django_micro import configure, route, run, template
 from django.conf.urls import url
-from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import static
 
@@ -44,12 +43,6 @@ def index(request):
 @route(r'^about$', name='about')
 def about(request):
     return render(request, 'about.html', {})
-
-
-# GET /favicon.ico
-@route(r'^favicon.ico$', name='favicon')
-def favicon(request):
-    return HttpResponse('')
 
 
 # A useful "|lookup" filter for dynamically retrieve dict values
