@@ -40,6 +40,12 @@ def index(request):
     return render(request, 'index.html', {})
 
 
+# GET /about
+@route(r'^about$', name='about')
+def about(request):
+    return render(request, 'about.html', {})
+
+
 # GET /favicon.ico
 @route(r'^favicon.ico$', name='favicon')
 def favicon(request):
